@@ -40,12 +40,30 @@
 
   -->
 
-  <main>
-    <div id="app"></div>
+  <main id="main">
+    <h1>Hero's are coming!</h1>
+    <div class="todo-app" id="app">
+      
+      <form class="row" action="">
+        <input type="text" id="input-box" placeholder="Add Todos here">
+        <button type="submit" id="add-button">Add</button>
+      </form>
+      <div id="empty-state">
+        <span id="todo-help"></span>
+        <img src="" alt="" id="empty-state-img">
+      </div>
+      <ul id="list-container">
+      </ul>
+      <div id="todo-manager" class="todo-manager">
+        <p >You have <span id="todo-count"></span> tasks left, <span id="done-count"></span> finished.</p>
+        <button id="btn_clear">Clear all</button>
+      </div>
+    </div>
+    
+    
+    <p id="copyright-box">&copy; Winnie the Pooh Todo app</p>
   </main>
-
   <!-- Add JavaScript File -->
   <script src="./script.js"></script>
-
 </body>
 </html>
